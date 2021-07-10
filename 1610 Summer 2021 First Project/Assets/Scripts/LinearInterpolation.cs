@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LinearInterpolation : MonoBehaviour
 {
-    public Light light;
+    Light myLight;
 
     // Start is called before the first frame update
     void Start()
@@ -23,9 +23,9 @@ public class LinearInterpolation : MonoBehaviour
     void Update()
     {
         // frame rate dependant
-        light.intensity = Mathf.Lerp(light.intensity, 8f, 0.5f);
+        myLight.intensity = Mathf.Lerp(myLight.intensity, 8f, 0.5f);
 
         // not frame rate dependant
-        light.intensity = Mathf.Lerp(light.intensity, 8f, 0.5f * Time.deltaTime);
+        myLight.intensity = Mathf.Lerp(myLight.intensity, 8f, 0.5f * Time.deltaTime);
     }
 }

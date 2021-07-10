@@ -3,7 +3,7 @@ using System.Collections;
 
 public class ButtonInput : MonoBehaviour
 {
-    public GUITexture graphic;
+    //public GUITexture graphic;
     public Texture2D standard;
     public Texture2D downgfx;
     public Texture2D upgfx;
@@ -11,7 +11,7 @@ public class ButtonInput : MonoBehaviour
 
     void Start()
     {
-        graphic.texture = standard;
+        //graphic.texture = standard;
     }
 
     void Update()
@@ -22,21 +22,21 @@ public class ButtonInput : MonoBehaviour
 
         if (down)
         {
-            graphic.texture = downgfx;
+            //graphic.texture = downgfx;
         }
         else if (held)
         {
-            graphic.texture = heldgfx;
+            //graphic.texture = heldgfx;
         }
         else if (up)
         {
-            graphic.texture = upgfx;
+            //graphic.texture = upgfx;
         }
         else
         {
-            graphic.texture = standard;
+            //graphic.texture = standard;
         }
 
-        guiText.text = " " + down + "\n " + held + "\n " + up;
+        //guiText.text = " " + down + "\n " + held + "\n " + up;
     }
 }
